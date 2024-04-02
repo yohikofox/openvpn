@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  vpn:
+    image: yohikofox/openvpn:latest
+    container_name: vpn
+    build:
+      context: .
+      dockerfile: Dockerfile
